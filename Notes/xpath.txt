@@ -1,0 +1,59 @@
+1.
+<select>
+<option value='jan'>Jan</option>
+<option value='feb'>Feb</option>---->
+</select>
+------------
+locator1: xpath: 
+1. //option[@value='feb']
+2. //option[text()='Feb']
+3. //option[contains(text(),'Feb')]
+Locator2: by .tagname("option")
+==================================================================
+2.<a href='fb.com'>Facebook Link</a>
+
+-------------------------------------
+Locators:-
+1.linkText - Facebook Link
+2. partialLinkText - Facebook L
+3. tagName - a
+4. xpath:
+(i) //a[@href='fb.com']
+(ii)//a[text()='Facebook Link']
+(iii) //a[contains(text(),'Facebook']
+
+<a href='fb.com?id=234'>Facebook Link</a>
+(iv)//a[contains(@href,'fb.com')]
+
+==================================================================
+3. <span>page Content</span>
+------------------------------
+Locators:-
+1.tagName:span
+2.xpath:
+(i)//span[text()='page Content']
+(ii)//span[contains(text(),'page Con')]
+
+===================================================================
+4. <input type='password' name='pwd' value="" id="pass" class="fld">
+----------------------------------------------------------------------
+Locators:
+--------
+1. id -pass
+2. name - pwd
+3. classNAme - fld
+4. tagName- input
+5. xpath-
+(i) //input[@type='password']
+(ii)//input[@name='pwd']
+(iii)//input[@id='pass']
+(iv)//input[@class='fld']
+
+
+
+
+
+
+
+
+
