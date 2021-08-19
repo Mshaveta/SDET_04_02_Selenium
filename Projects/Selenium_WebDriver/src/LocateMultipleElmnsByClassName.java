@@ -22,13 +22,14 @@ public class LocateMultipleElmnsByClassName {
 		driver.navigate().to("https://opensource-demo.orangehrmlive.com/index.php/admin/saveSystemUser");
 	}
 	
-	
 	public void locateMultipleFields() {
 		int count = driver.findElements(By.className("formInputText")).size();
 		System.out.println(count);
 		driver.findElements(By.className("formInputText")).get(2).sendKeys("tester@123");
 	}
+	
 	public static void main(String[] args) {
+		
 		LocateMultipleElmnsByClassName ld = new LocateMultipleElmnsByClassName();
 		ld.launchBrowser();
 		ld.login();

@@ -48,6 +48,136 @@ Locators:
 (ii)//input[@name='pwd']
 (iii)//input[@id='pass']
 (iv)//input[@class='fld']
+--------------------------------------------------------------------------
+<input required="" autocomplete="off" placeholder="First Name" type="text" id="firstName" class=" mr-sm-2 form-control">---0
+<input required="" autocomplete="off" placeholder="First Name" type="email"  class=" mr-sm-2 form-control">
+<input required="" autocomplete="off" placeholder="First Name" type="password"  class=" mr-sm-2 form-control">-------------->
+<input required="" autocomplete="off" placeholder="First Name" type="tel"  class=" mr-sm-2 form-control">
+<input required="" autocomplete="off" placeholder="First Name" type="radio"  class=" mr-sm-2 form-control">
+
+driver.findElements(By.className('form-control')).get(2).
+clear()
+getText()
+isDispayed()
+sendKeys()
+getAttribute()
+
+
+
+======================================================================================
+<a href="/places/" title="Take a look at popular places on Facebook.">Places</a>
+//tagName[@attr_name = 'exact attr_val']
+
+Ex:xpath
+1. //a[@href='/places/']
+2. //a[@title='Take a look at popular places on Facebook.']
+------------------------------------------
+//get the attribute value partially
+--------------------------------------
+//a[contains(@title,'Take a look at popular places on Facebook')]
+//a[contains(@href,'places')]
+
+
+<p>this is paragraph which contains the information related to selenium tool.</p>------->
+//p[text()='this is paragraph which contains the information related to selenium tool.']
+
+//p[contains(text(),'selenium tool')]------>1
+
+<p>this is paragraph which contains the information related to QTP tool.</p>
+this is paragraph which contains the information related to TCMS tool.
+this is paragraph which contains the information related to bugzilla tool.
+
+-------------------------------------------------------------------------
+Relative xpath:- 
+//*[@id="txtUsername"]--100 web Elemnets 
+---input 10
+//input[@id='']//10 elemnets 
+//*[@id="userNumber"]
+
+
+//*[@id="divLogo"]/img
+
+
+Absolute / Full xpath:
+
+/html/body/div[3]/div/div/div[2]/div[2]/div[1]/form/div[4]/div[2]/input---not recommended
+
+//a[normalize-space()='Forgot your password?']
+
+
+-----------------------------------------------------------------------
+xpath: dynamix xpath:
+----------------------------
+<ul>---parent tag of li
+	<li>1. PHP<li>---------------------------1
+	<li>2. HTML</li>------------->2
+	<li>3. JAVA</li>---------------------------3
+</ul>
+
+//li ----3-------0,1,2
+
+//ul/li-----------------3--1,2,3,
+
+
+
+<ul class="uiList localeSelectorList _2pid _509- _4ki _6-h _6-j _6-i" data-nocookies="1">
+
+<li>English (UK)</li>
+<li><a class="_sv4" dir="ltr" href="https://pa-in.">link1 </a></li>
+<li><a class="_sv4" dir="ltr" href="https://pa-in.">link1 </a></li>
+<li><a class="_sv4" dir="ltr" href="https://pa-in.">link1 </a></li>
+<li><a class="_sv4" dir="ltr" href="https://pa-in.">link1 </a></li>
+<li><a class="_sv4" dir="ltr" href="https://pa-in.">link1 </a></li>
+</ul>
+
+
+-----
+<ul class="uiList localeSelectorList _2pid _509- _4ki _6-h _6-j _6-i" data-nocookies="1">
+
+<li>English (UK)</li>
+<li><a class="_sv4" dir="ltr" href="https://pa-in.">link1 </a></li>
+<li><a class="_sv4" dir="ltr" href="https://pa-in.">link1 </a></li>
+<li><a class="_sv4" dir="ltr" href="https://pa-in.">link1 </a></li>
+<li><a class="_sv4" dir="ltr" href="https://pa-in.">link1 </a></li>
+<li><a class="_sv4" dir="ltr" href="https://pa-in.">link1 </a></li>
+</ul>
+
+//ul-----2
+//ul/li------12 lis
+
+----------------------------
+examples:
+$x("//ul")
+(2) [ul.uiList.localeSelectorList._2pid._509-._4ki._6-h._6-j._6-i, ul.uiList.pageFooterLinkList._509-._4ki._703._6-i]
+$x("//ul/li")
+(41) [li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li, li]0: li1: li2: li3: li4: li5: li6: li7: li8: li9: li10: li11: li12: li13: li14: li15: li16: li17: li18: li19: li20: li21: li22: li23: li24: li25: li26: li27: li28: li29: li30: li31: li32: li33: li34: li35: li36: li37: li38: li39: li40: lilength: 41[[Prototype]]: Array(0)
+$x("//ul/li[3]")
+(2) [li, li]0: li1: lilength: 2[[Prototype]]: Array(0)
+$x("//li[1]")
+(2) [li, li]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
