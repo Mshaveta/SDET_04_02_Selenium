@@ -42,21 +42,25 @@ public class XlsReader {
 		String value = sheet.getRow(row).getCell(col).getStringCellValue();
 		return value;
 	}
-	public static void main(String[] args) {
-		String wbPath = System.getProperty("user.dir") + "\\src\\testData\\loginData.xlsx";
-		XlsReader xlr = new XlsReader(wbPath);
-		int rowCount = xlr.getRowCount("login");
-		int colCount = xlr.getCellCount();
-		 
-		//to fetch all the data from Excel sheet
-		for(int i=1;i<rowCount;i++) {
-			for(int j=0;j<colCount;j++) {
-				String data = xlr.getCellData(i,j);
-				System.out.print(data+" ");
-			}
-			System.out.println ();
-		}
-		
-
-	}
+	
+//	public static void main(String[] args) {
+//		//S1: workbook Path
+//		String wbPath = System.getProperty("user.dir") + "\\src\\testData\\loginData.xlsx";
+//		XlsReader xlr = new XlsReader(wbPath);
+//		//S2: count Rows
+//		int rowCount = xlr.getRowCount("login");
+//		//S3: Count Cols
+//		int colCount = xlr.getCellCount();
+//		 
+//		//S4: to fetch all the data from Excel sheet
+//		for(int i=1;i<rowCount;i++) {
+//			for(int j=0;j<colCount;j++) {
+//				String data = xlr.getCellData(i,j);
+//				System.out.print(data+" ");
+//			}
+//			System.out.println ();
+//		}
+//		
+//
+//	}
 }
