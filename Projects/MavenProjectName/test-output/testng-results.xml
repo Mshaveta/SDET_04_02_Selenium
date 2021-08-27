@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1800" started-at="2021-08-27T12:03:38 IST" finished-at="2021-08-27T12:03:40 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1800" started-at="2021-08-27T12:03:38 IST" finished-at="2021-08-27T12:03:40 IST">
+      <class name="DataProviderDemo">
+        <test-method status="PASS" signature="login(java.lang.String,java.lang.String)[pri:0, instance:DataProviderDemo@4a87761d]" name="login" duration-ms="17" started-at="2021-08-27T12:03:39 IST" data-provider="readData" finished-at="2021-08-27T12:03:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String,java.lang.String)[pri:0, instance:DataProviderDemo@4a87761d]" name="login" duration-ms="3" started-at="2021-08-27T12:03:39 IST" data-provider="readData" finished-at="2021-08-27T12:03:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String,java.lang.String)[pri:0, instance:DataProviderDemo@4a87761d]" name="login" duration-ms="3" started-at="2021-08-27T12:03:39 IST" data-provider="readData" finished-at="2021-08-27T12:03:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- DataProviderDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
