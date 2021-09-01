@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14429" started-at="2021-09-01T11:51:13 IST" finished-at="2021-09-01T11:51:27 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14429" started-at="2021-09-01T11:51:13 IST" finished-at="2021-09-01T11:51:27 IST">
+      <class name="com.orghrm.qa.pageTests.BaseTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.orghrm.qa.pageTests.BaseTest@2de8284b]" name="setUp" duration-ms="14250" started-at="2021-09-01T11:51:13 IST" finished-at="2021-09-01T11:51:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.orghrm.qa.pageTests.BaseTest@2de8284b]" name="tearDown" is-config="true" duration-ms="3865" started-at="2021-09-01T11:51:27 IST" finished-at="2021-09-01T11:51:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orghrm.qa.pageTests.BaseTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

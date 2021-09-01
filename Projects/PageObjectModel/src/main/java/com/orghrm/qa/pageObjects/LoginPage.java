@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
 	private By unameTxtFld = By.id("txtUsername");
-	private By pwdTxtFld = By.id("txtUsername");
+	private By pwdTxtFld = By.id("txtPassword");
 	private By loginBtn = By.id("btnLogin");
 
 	private WebElement getUnameTxtFld() {
-		return getWebElement(unameTxtFld);
+		return getWebElement(unameTxtFld);//driver.findElement(By.id("txtUsername"))
 	}
 
 	private WebElement getPwdTxtFld() {
