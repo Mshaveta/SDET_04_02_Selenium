@@ -6,14 +6,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.BeforeSuite;
+
+import com.orghrm.qa.pageObjects.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	WebDriver driver;
-
-	@Test
+	LoginPage loginPage;
+	@BeforeSuite
 	public void setUp() {
 		String appUrl = readProperty("appurl");
 		String browser = readProperty("browser");
@@ -26,6 +28,7 @@ public class BaseTest {
 			driver = new ChromeDriver();
 		}
 		driver.get(appUrl);
+		loginPage = new LoginPage(driver);
 	}
 
 	@AfterSuite

@@ -1,9 +1,14 @@
 package com.orghrm.qa.pageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
+	public LoginPage(WebDriver driver) {
+		super(driver);
+	}
+
 	private By unameTxtFld = By.id("txtUsername");
 	private By pwdTxtFld = By.id("txtPassword");
 	private By loginBtn = By.id("btnLogin");
@@ -20,16 +25,14 @@ public class LoginPage extends BasePage {
 		return getWebElement(loginBtn);
 	}
 
-	public void doLogin() {
-		getUnameTxtFld().sendKeys("admin");
-		getPwdTxtFld().sendKeys("admin123");
+	public HomePage doLogin(String uname, String pwd) {
+		getUnameTxtFld().sendKeys(uname);
+		getPwdTxtFld().sendKeys(pwd);
 		getLoginBtn().click();
+		HomePage hp = new HomePage(driver);
+		return hp;
 
 	}
 
-	public static void main(String[] args) {
-		LoginPage lp = new LoginPage();
-		lp.doLogin();
-
-	}
+ 
 }

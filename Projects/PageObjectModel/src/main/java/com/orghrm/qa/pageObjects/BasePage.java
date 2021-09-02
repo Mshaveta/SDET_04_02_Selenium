@@ -4,8 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class BasePage {
+abstract public class BasePage {
 	WebDriver driver;// instance variable / null
+
+	public BasePage(WebDriver driver) {
+		this.driver=driver;//instance var = localVar
+	}
 
 	public String getPageTitle() {
 		String pageTitle = driver.getTitle();
@@ -15,6 +19,8 @@ public class BasePage {
 	public WebElement getWebElement(By element) {
 		return driver.findElement(element);
 	}
+	
+	
 
 	
 }
