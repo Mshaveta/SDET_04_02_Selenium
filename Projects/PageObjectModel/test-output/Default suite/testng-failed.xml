@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.orghrm.qa.pageTests.LoginTest">
+      <class name="com.orghrm.qa.pageTests.HomeTest">
         <methods>
+          <include name="LogOut"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyLogin"/>
         </methods>
-      </class> <!-- com.orghrm.qa.pageTests.LoginTest -->
+      </class> <!-- com.orghrm.qa.pageTests.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

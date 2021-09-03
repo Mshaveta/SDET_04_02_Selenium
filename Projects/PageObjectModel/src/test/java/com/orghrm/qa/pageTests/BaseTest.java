@@ -5,8 +5,8 @@ import static com.orghrm.qa.utility.ReadConfigProp.readProperty;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import com.orghrm.qa.pageObjects.LoginPage;
 
@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	WebDriver driver;
 	LoginPage loginPage;
-	@BeforeSuite
+	@BeforeClass
 	public void setUp() {
 		String appUrl = readProperty("appurl");
 		String browser = readProperty("browser");
@@ -31,7 +31,7 @@ public class BaseTest {
 		loginPage = new LoginPage(driver);
 	}
 
-	@AfterSuite
+	@AfterClass
 	public void tearDown() {
 		try {
 			Thread.sleep(3000);
