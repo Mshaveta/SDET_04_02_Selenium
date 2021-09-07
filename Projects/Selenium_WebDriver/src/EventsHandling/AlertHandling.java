@@ -4,8 +4,10 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class AlertHandling {
 	WebDriver driver;// null
@@ -27,24 +29,23 @@ public class AlertHandling {
 		Alert alt = driver.switchTo().alert();
 		String alertMsg = alt.getText();
 		String expecMsg = "You clicked a button";
-		if (expecMsg.equalsIgnoreCase(alertMsg)) {
-			Thread.sleep(2000);
-			alt.accept();// for OK button
-		}
+		Assert.assertEquals(alertMsg, expecMsg);
+		Thread.sleep(2000);
+		alt.accept();// for OK button
 
 	}
 
 	@Test
 	public void confirmBox() throws InterruptedException {
+		SoftAssert sa = new SoftAssert();
 		driver.findElement(By.id("confirmButton")).click();
 		Alert alt = driver.switchTo().alert();
 		String alertMsg = alt.getText();
-		String expecMsg = "Do you confirm action?";
-		if (expecMsg.equalsIgnoreCase(alertMsg)) {
-			Thread.sleep(2000);
-			alt.dismiss(); // to press cancel button
-		}
-
+		String expecMsg = "Do you confirm act";
+		sa.assertEquals(alertMsg, expecMsg, "not mATched!");
+		Thread.sleep(2000);
+		alt.dismiss(); // to press cancel button
+		sa.assertAll();
 	}
 
 	@Test
