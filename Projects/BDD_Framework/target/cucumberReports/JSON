@@ -1,0 +1,244 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2621900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Launch the application with valid URL",
+            "match": {
+              "location": "LoginClass.launch_app()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Check login Func with valid Cred.",
+        "description": "",
+        "id": "login-functionality;check-login-func-with-valid-cred.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 446200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters \"Admin\" and \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginClass.user_enters_valid_Credentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on Login button",
+            "match": {
+              "location": "LoginClass.click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user should be redirect to Home page",
+            "match": {
+              "location": "LoginClass.user_should_be_redirect_to_Home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 564900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Launch the application with valid URL",
+            "match": {
+              "location": "LoginClass.launch_app()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Check login Func with valid Cred.",
+        "description": "",
+        "id": "login-functionality;check-login-func-with-valid-cred.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1653100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters \"admin123\" and \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginClass.user_enters_valid_Credentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 276600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on Login button",
+            "match": {
+              "location": "LoginClass.click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 272100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user should be redirect to Home page",
+            "match": {
+              "location": "LoginClass.user_should_be_redirect_to_Home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 171100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Launch the application with valid URL",
+            "match": {
+              "location": "LoginClass.launch_app()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Check login Func with valid Cred.",
+        "description": "",
+        "id": "login-functionality;check-login-func-with-valid-cred.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 238200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enters \"admin\" and \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginClass.user_enters_valid_Credentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "click on Login button",
+            "match": {
+              "location": "LoginClass.click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should be redirect to Home page",
+            "match": {
+              "location": "LoginClass.user_should_be_redirect_to_Home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "src/main/java/features/login.feature",
+    "tags": []
+  }
+]

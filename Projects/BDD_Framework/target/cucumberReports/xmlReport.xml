@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.039764">
+<testcase classname="Login Functionality" name="Check login Func with valid Cred." time="0.034685">
+<system-out><![CDATA[Given Launch the application with valid URL.................................passed
+When user enters "Admin" and "admin123".....................................passed
+And click on Login button...................................................passed
+Then user should be redirect to Home page...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Check login Func with valid Cred. 2" time="0.004125">
+<system-out><![CDATA[Given Launch the application with valid URL.................................passed
+When user enters "admin123" and "admin123"..................................passed
+And click on Login button...................................................passed
+Then user should be redirect to Home page...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Check login Func with valid Cred. 3" time="0.000954">
+<system-out><![CDATA[Given Launch the application with valid URL.................................passed
+When user enters "admin" and "admin"........................................passed
+And click on Login button...................................................passed
+Then user should be redirect to Home page...................................passed
+]]></system-out>
+</testcase>
+</testsuite>
