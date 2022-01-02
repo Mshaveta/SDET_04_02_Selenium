@@ -26,7 +26,7 @@ public class DataProviderDemo {
 	}
 
 	@Test(dataProvider = "readData")
-	public void login(String username , String password) {
-		System.out.println("Login - "+username+" - "+password);
+	public void login(String appUrl , String username , String password) {
+		System.out.println("App Url  - "+appUrl+"Login - "+username+" - "+password);
 	}
 }
